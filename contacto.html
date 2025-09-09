@@ -52,6 +52,8 @@
             transition: transform 0.3s, box-shadow 0.3s;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             border: none;
+            text-align: center;
+            margin-bottom: 20px;
         }
         
         .contact-info-card:hover {
@@ -87,7 +89,6 @@
         .btn-primary:hover {
             background-color: #2a75ff;
             border-color: #2a75ff;
-            transform: translateY(-2px);
         }
         
         .btn-outline-primary {
@@ -160,13 +161,6 @@
             color: var(--primary);
         }
         
-        .map-container {
-            border-radius: 10px;
-            overflow: hidden;
-            height: 300px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
         .section-title {
             position: relative;
             padding-bottom: 15px;
@@ -186,6 +180,12 @@
         .section-title.text-center::after {
             left: 50%;
             transform: translateX(-50%);
+        }
+        
+        .contact-methods {
+            background-color: var(--light);
+            border-radius: 10px;
+            padding: 30px;
         }
     </style>
 </head>
@@ -245,66 +245,56 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Methods -->
     <section class="py-5">
         <div class="container">
-            <div class="row g-5">
-                <!-- Contact Info -->
-                <div class="col-lg-4">
-                    <h3 class="section-title">Información de contacto</h3>
-                    
-                    <div class="contact-info-card mb-4">
-                        <div class="text-center">
-                            <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <h5>Dirección</h5>
-                            <p>Calle de la Programación, 123<br>Madrid, España 28001</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-info-card mb-4">
-                        <div class="text-center">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <h5>Teléfono</h5>
-                            <p>+34 91 123 45 67<br>Lunes a Viernes, 9:00-18:00</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-info-card mb-4">
-                        <div class="text-center">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <h5>Email</h5>
-                            <p>info@estudionet.com<br>soporte@estudionet.com</p>
-                        </div>
-                    </div>
-                    
+            <h2 class="section-title text-center mb-5">Métodos de contacto</h2>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
                     <div class="contact-info-card">
-                        <div class="text-center">
-                            <div class="contact-icon">
-                                <i class="fas fa-share-alt"></i>
-                            </div>
-                            <h5>Síguenos</h5>
-                            <div class="d-flex justify-content-center mt-3">
-                                <a href="#" class="social-icon text-dark"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="social-icon text-dark"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="social-icon text-dark"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="social-icon text-dark"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="social-icon text-dark"><i class="fab fa-youtube"></i></a>
-                            </div>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
+                        <h4>Email</h4>
+                        <p>Envíanos un correo electrónico y te responderemos lo antes posible.</p>
+                        <a href="mailto:info@estudionet.com" class="btn btn-outline-primary mt-3">info@estudionet.com</a>
                     </div>
                 </div>
                 
-                <!-- Contact Form -->
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Teléfono</h4>
+                        <p>Lunes a Viernes de 9:00 a 18:00</p>
+                        <a href="tel:+34911234567" class="btn btn-outline-primary mt-3">+34 911 234 567</a>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Chat en vivo</h4>
+                        <p>Obtén ayuda inmediata a través de nuestro chat de soporte.</p>
+                        <a href="#" class="btn btn-primary mt-3">Iniciar chat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="card shadow border-0">
                         <div class="card-body p-4 p-md-5">
-                            <h3 class="card-title fw-bold mb-4">Envíanos un mensaje</h3>
+                            <h3 class="card-title fw-bold mb-4 text-center">Envíanos un mensaje</h3>
                             <form>
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
@@ -339,21 +329,13 @@
                                     <input type="checkbox" class="form-check-input" id="newsletter">
                                     <label class="form-check-label" for="newsletter">Deseo recibir información sobre nuevos cursos y promociones</label>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar mensaje</button>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg mt-3">Enviar mensaje</button>
+                                </div>
                             </form>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-5">Nuestra ubicación</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4753179979547!2d-3.7037903846039956!3d40.41962997936447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e23931ee7%3A0x2e4ef2e1c74a0b3e!2sPuerta%20del%20Sol!5e0!3m2!1ses!2ses!4v1665498373826!5m2!1ses!2ses" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -466,8 +448,8 @@
                     <h5 class="fw-bold">Contacto</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@estudionet.com</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +34 91 123 45 67</li>
-                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> Madrid, España</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +34 911 234 567</li>
+                        <li class="mb-2"><i class="fas fa-clock me-2"></i> Lunes a Viernes, 9:00-18:00</li>
                     </ul>
                 </div>
             </div>
