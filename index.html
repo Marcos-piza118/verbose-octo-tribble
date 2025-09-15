@@ -4,320 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio.net - Red Social para Desarrolladores</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <style>
-        :root {
-            --primary-color: #6f42c1;
-            --secondary-color: #20c997;
-            --dark-color: #1a1a2e;
-            --light-color: #f8f9fa;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-        }
-        
-        .navbar {
-            background-color: var(--dark-color);
-        }
-        
-        .navbar-brand {
-            font-weight: 700;
-            color: var(--primary-color);
-        }
-        
-        .hero-section {
-            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 7rem 0;
-        }
-        
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-        
-        .btn-primary:hover {
-            background-color: #5a32a3;
-            border-color: #5a32a3;
-        }
-        
-        .btn-success {
-            background-color: var(--secondary-color);
-            border-color: var(--secondary-color);
-        }
-        
-        .card {
-            transition: transform 0.3s;
-            margin-bottom: 20px;
-        }
-        
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        
-        .course-img {
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .social-icon {
-            font-size: 1.5rem;
-            margin-right: 15px;
-            color: var(--light-color);
-        }
-        
-        .social-icon:hover {
-            color: var(--secondary-color);
-        }
-        
-        footer {
-            background-color: var(--dark-color);
-            color: var(--light-color);
-            padding: 3rem 0;
-        }
-        
-        .form-control:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.25);
-        }
-    </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+<style>
+    :root {
+        --primary-color: #6f42c1;
+        --secondary-color: #20c997;
+        --dark-color: #1a1a2e;
+        --light-color: #f8f9fa;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+    }
+    
+    .navbar {
+        background-color: var(--dark-color);
+    }
+    
+    .navbar-brand {
+        font-weight: 700;
+        color: var(--primary-color);
+    }
+    
+    .hero-section {
+        background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('imagen/fondo.png');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 7rem 0;
+    }
+    
+    .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+    
+    .btn-primary:hover {
+        background-color: #5a32a3;
+        border-color: #5a32a3;
+    }
+    
+    .btn-success {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+    }
+    
+    .social-icon {
+        font-size: 1.5rem;
+        margin-right: 15px;
+        color: var(--light-color);
+    }
+    
+    .social-icon:hover {
+        color: var(--secondary-color);
+    }
+    
+    footer {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        padding: 3rem 0;
+    }
+    
+    .form-control:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.25);
+    }
+    .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+</style>
+
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Estudio.net</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cursos.html">Cursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-success ms-2" href="#">Registrarse</a>
-                    </li>
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Estudio.net</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cursos.html">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-success ms-2" href="#">Registrarse</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-4">Conecta, Aprende y Crece con Estudio.net</h1>
+        <p class="lead mb-4">La red social para desarrolladores donde puedes aprender, enseñar y conectar con otros profesionales.</p>
+        <a href="cursos.html" class="btn btn-primary btn-lg me-2">Explorar Cursos</a>
+        <a href="#" class="btn btn-outline-light btn-lg">Crear Cuenta</a>
+    </div>
+</section>
+
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">¿Listo para unirte a nuestra comunidad?</h2>
+        <p class="lead mb-4">Regístrate hoy y comienza a conectar con otros desarrolladores</p>
+        <a href="#" class="btn btn-light btn-lg me-2">Crear Cuenta Gratis</a>
+        <a href="contacto.html" class="btn btn-outline-light btn-lg">Más Información</a>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5>Estudio.net</h5>
+                <p>La red social para desarrolladores donde puedes aprender, enseñar y conectar con otros profesionales.</p>
+                <div>
+                    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h5>Enlaces</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-white">Inicio</a></li>
+                    <li><a href="cursos.html" class="text-white">Cursos</a></li>
+                    <li><a href="contacto.html" class="text-white">Contacto</a></li>
                 </ul>
             </div>
+            <div class="col-md-2 mb-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Términos</a></li>
+                    <li><a href="#" class="text-white">Privacidad</a></li>
+                    <li><a href="#" class="text-white">Cookies</a></li>
+                </ul>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold mb-4">Conecta, Aprende y Crece con Estudio.net</h1>
-            <p class="lead mb-4">La red social para desarrolladores donde puedes aprender, enseñar y conectar con otros profesionales.</p>
-            <a href="cursos.html" class="btn btn-primary btn-lg me-2">Explorar Cursos</a>
-            <a href="#" class="btn btn-outline-light btn-lg">Crear Cuenta</a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2>¿Por qué unirte a Estudio.net?</h2>
-                <p class="lead">La plataforma diseñada específicamente para desarrolladores</p>
+        <hr class="mt-0 mb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">&copy; 2025 Estudio.net. Todos los derechos reservados.</p>
             </div>
-            <div class="row">
-                <div class="col-md-4 text-center mb-4">
-                    <div class="bg-primary bg-opacity-10 p-4 rounded-circle d-inline-block mb-3">
-                        <i class="bi bi-people-fill text-primary fs-1"></i>
-                    </div>
-                    <h4>Comunidad Activa</h4>
-                    <p>Conecta con miles de desarrolladores alrededor del mundo, comparte conocimientos y haz networking.</p>
-                </div>
-                <div class="col-md-4 text-center mb-4">
-                    <div class="bg-success bg-opacity-10 p-4 rounded-circle d-inline-block mb-3">
-                        <i class="bi bi-code-square text-success fs-1"></i>
-                    </div>
-                    <h4>Cursos de Calidad</h4>
-                    <p>Accede a cursos creados por expertos en diferentes tecnologías y lenguajes de programación.</p>
-                </div>
-                <div class="col-md-4 text-center mb-4">
-                    <div class="bg-warning bg-opacity-10 p-4 rounded-circle d-inline-block mb-3">
-                        <i class="bi bi-currency-dollar text-warning fs-1"></i>
-                    </div>
-                    <h4>Monetiza tu Conocimiento</h4>
-                    <p>Crea y vende tus propios cursos, gana dinero compartiendo lo que sabes con la comunidad.</p>
-                </div>
+            <div class="col-md-6 text-md-end">
+                <p class="mb-0">Desarrollado por hola-mundo25</p>
             </div>
         </div>
-    </section>
-
-    <!-- Popular Courses Preview -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2>Cursos Populares</h2>
-                <p class="lead">Nuestros cursos más destacados</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top course-img" alt="Curso de React">
-                        <div class="card-body">
-                            <h5 class="card-title">React Avanzado</h5>
-                            <p class="card-text">Domina React con hooks, context API y patrones avanzados.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="fw-bold text-primary">$49.99</span>
-                                <a href="cursos.html" class="btn btn-sm btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top course-img" alt="Curso de Python">
-                        <div class="card-body">
-                            <h5 class="card-title">Python para Data Science</h5>
-                            <p class="card-text">Aprende a usar Python para análisis de datos y machine learning.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="fw-bold text-primary">$59.99</span>
-                                <a href="cursos.html" class="btn btn-sm btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" class="card-img-top course-img" alt="Curso de AWS">
-                        <div class="card-body">
-                            <h5 class="card-title">Certificación AWS</h5>
-                            <p class="card-text">Prepárate para la certificación de AWS Solutions Architect.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="fw-bold text-primary">$79.99</span>
-                                <a href="cursos.html" class="btn btn-sm btn-outline-primary">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="cursos.html" class="btn btn-primary">Ver todos los cursos</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2>Lo que dicen nuestros usuarios</h2>
-                <p class="lead">Testimonios de desarrolladores que usan Estudio.net</p>
-            </div>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-circle mb-3" alt="Usuario" width="80">
-                            <h5>María González</h5>
-                            <p class="text-muted">Desarrolladora Frontend</p>
-                            <p class="card-text">"Gracias a los cursos de Estudio.net pude mejorar mis habilidades en React y conseguir un mejor empleo. La comunidad es increíble."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-3" alt="Usuario" width="80">
-                            <h5>Carlos Mendoza</h5>
-                            <p class="text-muted">Ingeniero de Software</p>
-                            <p class="card-text">"He creado dos cursos en la plataforma y he ganado más de $5,000 USD extra. Es una excelente forma de monetizar mi conocimiento."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle mb-3" alt="Usuario" width="80">
-                            <h5>Ana Torres</h5>
-                            <p class="text-muted">Desarrolladora Full Stack</p>
-                            <p class="card-text">"La calidad de los cursos es excelente. He aprendido tecnologías que necesitaba para mis proyectos personales y laborales."</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="py-5 bg-primary text-white">
-        <div class="container text-center">
-            <h2 class="mb-4">¿Listo para unirte a nuestra comunidad?</h2>
-            <p class="lead mb-4">Regístrate hoy y comienza a conectar con otros desarrolladores</p>
-            <a href="#" class="btn btn-light btn-lg me-2">Crear Cuenta Gratis</a>
-            <a href="contacto.html" class="btn btn-outline-light btn-lg">Más Información</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5>Estudio.net</h5>
-                    <p>La red social para desarrolladores donde puedes aprender, enseñar y conectar con otros profesionales.</p>
-                    <div>
-                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="bi bi-github"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h5>Enlaces</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-white">Inicio</a></li>
-                        <li><a href="cursos.html" class="text-white">Cursos</a></li>
-                        <li><a href="contacto.html" class="text-white">Contacto</a></li>
-                        <li><a href="#" class="text-white">Precios</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 mb-4">
-                    <h5>Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Términos</a></li>
-                        <li><a href="#" class="text-white">Privacidad</a></li>
-                        <li><a href="#" class="text-white">Cookies</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <h5>Suscríbete al Newsletter</h5>
-                    <p>Recibe las últimas novedades y cursos directamente en tu email.</p>
-                    <form>
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Tu email">
-                            <button class="btn btn-success" type="submit">Suscribir</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <hr class="mt-0 mb-4">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2023 Estudio.net. Todos los derechos reservados.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">Desarrollado con <i class="bi bi-heart-fill text-danger"></i> para devs</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</footer>
 </body>
 </html>
